@@ -3,13 +3,9 @@ import boto3
 import base64
 from botocore.exceptions import ClientError
 
-# Use this code snippet in your app.
-# If you need more information about configurations or implementing the sample code, visit the AWS docs:
-# https://aws.amazon.com/developers/getting-started/python/
-
-
+# get_secret is from AWS
 def get_secret():
-    secret_name = "full-arn-path-to-secret"
+    secret_name = "arn:aws:secretsmanager:us-east-2:428386179621:secret:config-history_api-dWq6iZ"
     region_name = "us-east-2"
 
     # Create a Secrets Manager client
@@ -56,17 +52,3 @@ def get_secret():
                 get_secret_value_response['SecretBinary'])
 
         return json.loads(secret)
-
-
-
-def handler(event, context):
-    awsConfig = get_secret()
-    print(awsConfig)
-    print(awsConfig["DAYSAGO"])
-    return {
-        'statusCode': 200,
-        'headers': {
-            'Content-Type': 'text/plain'
-        },
-        'body': 'Hello, CDK! You have hit {}\n'.format(awsConfig["DAYSAGO"])
-    }
