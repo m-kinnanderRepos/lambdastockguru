@@ -1,17 +1,20 @@
 import requests
 import json
 from datetime import date, timedelta
-from api_classes import HistoryResponse, HistoryApiConfig
-from stock_classes import Stock, Advice
+# ------------------------
+# Used for lambda
+# from api_classes import HistoryResponse, HistoryApiConfig
+# from stock_classes import Stock, Advice
+# ------------------------
 # Used for testing locally
 # ------------------------
-# import sys
-# import csv
-# import os
-# import sys
-# sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# from lambdaFolder.api_classes import HistoryResponse, HistoryApiConfig
-# from lambdaFolder.stock_classes import Stock, Advice
+import sys
+import csv
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from lambdaFolder.api_classes import HistoryResponse, HistoryApiConfig
+from lambdaFolder.stock_classes import Stock, Advice
 # ------------------------
 
 

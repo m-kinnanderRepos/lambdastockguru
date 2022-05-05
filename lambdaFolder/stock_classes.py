@@ -1,10 +1,13 @@
-from api_classes import HistoryApiConfig, HistoryResponse
+# Used for Lambda
+# ------------------------
+# from api_classes import HistoryApiConfig, HistoryResponse
+# ------------------------
 # Used for testing locally
 # ------------------------
-# import os
-# import sys
-# sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# from lambdaFolder.api_classes import HistoryApiConfig, HistoryResponse
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from lambdaFolder.api_classes import HistoryApiConfig, HistoryResponse
 # ------------------------
 
 
