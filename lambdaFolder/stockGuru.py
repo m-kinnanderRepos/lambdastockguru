@@ -1,17 +1,20 @@
 import json
-from getSecret import get_secret
-from stocks import *
-from api_classes import *
-from stock_classes import Stock, Advice
+# Used for Lambda
+# ------------------------
+# from getSecret import get_secret
+# from stocks import *
+# from api_classes import *
+# from stock_classes import Stock, Advice
+# ------------------------
 # Used for testing locally
 # ------------------------
-# import os
-# import sys
-# sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# from lambdaFolder.getSecret import get_secret
-# from lambdaFolder.stocks import *
-# from lambdaFolder.api_classes import *
-# from lambdaFolder.stock_classes import Stock, Advice
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from lambdaFolder.getSecret import get_secret
+from lambdaFolder.stocks import *
+from lambdaFolder.api_classes import *
+from lambdaFolder.stock_classes import Stock, Advice
 # ------------------------
 
 
