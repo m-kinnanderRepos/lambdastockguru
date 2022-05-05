@@ -1,8 +1,8 @@
 import requests
 import json
 from datetime import date, timedelta
-# ------------------------
 # Used for lambda
+# ------------------------
 # from api_classes import HistoryResponse, HistoryApiConfig
 # from stock_classes import Stock, Advice
 # ------------------------
