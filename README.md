@@ -5,6 +5,7 @@ lambdaStockGuru is a lambda to help monitor your stocks.
 ## Installation
 
 Run this project in its own virtual environment. Look into venv or pyenv.
+**Make sure you are in the root directory of application.**
 
 You need to install the AWS CDK toolkit
 
@@ -16,6 +17,12 @@ You also need to pip install software from requirements.txt.
 
 ```bash
 pip install -r requirements.txt
+```
+
+AND also pip install software from requirements.txt to package to be used in lambda
+
+```bash
+pip install --target=package -r requirements.txt
 ```
 
 ## Creation
@@ -51,6 +58,8 @@ cdk synth
 cdk bootstrap
 cdk deploy
 ```
+
+**If lambda was deployed successfully and you can't find it, make sure your region in the UI is the same region in .aws/config**
 
 - When done running lambda, run
 
